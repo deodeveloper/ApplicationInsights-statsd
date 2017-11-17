@@ -26,16 +26,16 @@ Continue with the Existing Project instructions
     
 ### Existing project
 
-Install the `appinsights-statsd` backend npm module:
+Install the `appinsights-statsd-deo` backend npm module:
 
     $ cd /path/to/statsd
-    $ npm install appinsights-statsd --save
+    $ npm install appinsights-statsd-deo --save
 
 Add the backend and configuration to your statsd config file (`appinsights.js`):
 
 ```js
 {
-    backends: [ "appinsights-statsd" ],  // [Required] The Application Insighst StatsD backend
+    backends: [ "appinsights-statsd-deo" ],  // [Required] The Application Insighst StatsD backend
     aiInstrumentationKey: "<Application Insights Instrumentation Key from https://portal.azure.com>",  // [Required] Your instrumentation key
     aiPrefix: "myapp",  // [Optional] Send only metrics with this prefix
     aiRoleName: "MyFrontEnd",  // [Optional] Add this role name context tag to every metric
